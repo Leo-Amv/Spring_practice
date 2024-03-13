@@ -23,7 +23,7 @@
 
 ## Задания:
 
-1. Создать spring-boot приложение с [помощью](https://start.spring.io/) spring initializr
+1. Создать spring-boot приложение с помощью [spring initializr](https://start.spring.io/)
 2. Создать Класс Student c полями: идентификатор, имя, имя группы
 3. Создать контроллер, обрабатывающий входящие запросы:
     * 3.1. GET /student/{id} - получить студента по ID
