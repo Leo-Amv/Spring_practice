@@ -36,7 +36,7 @@ private final StudentRepository repository;
         return repository.getStudentbyGroup(groupName);
     }
 
-    @PostMapping()
+    @PostMapping("/add")
     public void createStudent(String name,String groupName){
         repository.createStudent(name, groupName);
     }
