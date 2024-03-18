@@ -37,8 +37,9 @@ private final StudentRepository repository;
     }
 
     @PostMapping("/add")
-    public void createStudent(String name,String groupName){
-        repository.createStudent(name, groupName);
+    public Student createStudent(@RequestBody Student student){
+        repository.createStudent(student);
+        return student;
     }
 
     @DeleteMapping("/{id}")

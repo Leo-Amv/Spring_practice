@@ -37,8 +37,8 @@ public class StudentRepository {
     public List<Student> getStudentbyGroup(String group ){
         return students.stream().filter(it -> it.getGroupName().contains(group)).toList();
     }
-    public void createStudent(String name,String groupName){
-        students.add(new Student(name,groupName));
+    public void createStudent(Student student){
+        students.add(student);
     }
     public void deleteStudent(long id){
         students.remove(getStudentbyId(id));
