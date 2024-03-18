@@ -1,30 +1,28 @@
 package ru.gb.task2;
 
 import org.springframework.stereotype.Repository;
-import org.springframework.web.bind.annotation.GetMapping;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-import java.util.stream.Collectors;
 
 @Repository
 public class StudentRepository {
-    private List<Student> students;
+    private final List<Student> students;
 
     public StudentRepository() {
         this.students = new ArrayList<>();
         students.add(new Student("Alex","A"));
         students.add(new Student("Petr","B"));
         students.add(new Student("Alex","C"));
-        students.add(new Student("Alex","C"));
-        students.add(new Student("Alex","B"));
-        students.add(new Student("Alex","A"));
-        students.add(new Student("Alex","B"));
-        students.add(new Student("Alex","A"));
-        students.add(new Student("Alex","C"));
-        students.add(new Student("Alex","A"));
-        students.add(new Student("Alex","B"));
+        students.add(new Student("Aleksey","C"));
+        students.add(new Student("Alina","B"));
+        students.add(new Student("Pedro","A"));
+        students.add(new Student("Niko","B"));
+        students.add(new Student("Nisa","A"));
+        students.add(new Student("Leo","C"));
+        students.add(new Student("Leman","A"));
+        students.add(new Student("Oleg","B"));
     }
 
     public Student getStudentbyId(long id){
